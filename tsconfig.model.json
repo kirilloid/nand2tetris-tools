@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "strict": true,
+        "outDir": "dist",
+        "target": "es5"
+    },
+    "include": [
+        "src/model/**/*"
+    ]
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="node_modules/requirejs/require.js"></script>
+    <script>
+    require.config({
+      paths: {
+        'react': 'node_modules/react/dist/react',
+        'react-dom': 'node_modules/react-dom/dist/react-dom',
+        'react-flex': 'node_modules/react-flex/build',
+        'redux': 'node_modules/redux/dist/redux',
+        'xstream': 'node_modules/xstream/index',
+      }
+    });
+    require(["index"], function () {});
+    </script>
+    <script src="build.js"></script>
+  </body>
+</html>
